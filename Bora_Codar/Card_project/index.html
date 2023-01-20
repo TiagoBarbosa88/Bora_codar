@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="animated">
 
 <head>
   <!-- Fonts -->
@@ -19,10 +19,10 @@
 <body>
   <div class="container">
     <div class="product-image">
-      <button id="btn-360">
+      <button id="btn-360" onclick="toggle()">
         <img src="./img/360.svg" alt="clique nesse botão para animar o sofa">
       </button>
-      <button id="btn-close" >
+      <button id="btn-close" onclick="toggle()">
         <img src="./img/close.svg" alt="parar de animar o sofa">        
       </button > 
       
@@ -42,6 +42,12 @@
 
   </div>
 
+
+  <script>
+    function toggle(){
+      document.documentElement.classList.toggle('animated')
+    }
+  </script>
 </body>
 
 </html>
